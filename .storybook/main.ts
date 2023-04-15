@@ -9,7 +9,11 @@ const config: StorybookConfig = {
   ],
   framework: {
     name: "@storybook/sveltekit",
-    options: {},
+    options: {
+      builder: {
+        viteConfigPath: "./vite.config.ts",
+      }
+    },
   },
   docs: {
     autodocs: "tag",
